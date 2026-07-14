@@ -1,0 +1,26 @@
+{
+  "name": "jobs-api",
+  "version": "1.0.0",
+  "description": "jobs-api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohahuss10/jobs-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mohahuss10/jobs-api/issues"
+  },
+  "homepage": "https://github.com/mohahuss10/jobs-api#readme",
+  "dependencies": {
+    "http-status-codes": "^2.3.0"
+  }
+}
