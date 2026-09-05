@@ -10,7 +10,7 @@ const app = express()
 const connectDB = require('./db/connect')
 
 // ✅ COMMENT OUT AUTH FOR NOW (until you build it)
-// const authenticateUser = require('./middleware/authentication')
+const authenticateUser = require('./middleware/authentication')
 
 //routers
 const authRouter = require('./routes/auth')
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 app.use('/api/v1/auth', authRouter)
 
 
-app.use('/api/v1/jobs', jobsRouter)  // ← No auth for now
+app.use('/api/v1/jobs',authenticateUser ,jobsRouter)  // ← No auth for now
 
 // app.use(notFoundMiddleware)
 // app.use(errorHandlerMiddleware)
